@@ -3,6 +3,7 @@ package com.Test;
 import com.Test.entity.Student;
 import com.Test.jdbc.JdbcConnection;
 import com.Test.lambda.LambdaDemo;
+import com.Test.optional.Optionalobj;
 import com.Test.streams.Streams;
 
 public class Test {
@@ -31,6 +32,17 @@ public class Test {
         Streams streams = new Streams();
         streams.streamUsage();
 
+        //optionalFunctionality
+        Optionalobj optionalobj =new Optionalobj();
+
+        try {
+            optionalobj.nonOptional();
+        }
+        catch (Exception exception){
+            System.out.println(exception.getMessage());
+        }
+
+        optionalobj.optionalFUnctionality();
 
 
     }
