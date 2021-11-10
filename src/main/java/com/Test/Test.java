@@ -1,6 +1,7 @@
 package com.Test;
 
 import com.Test.entity.Student;
+import com.Test.iterators.IteratorClass;
 import com.Test.jdbc.JdbcConnection;
 import com.Test.lambda.LambdaDemo;
 import com.Test.optional.Optionalobj;
@@ -43,6 +44,10 @@ public class Test {
         }
 
         optionalobj.optionalFUnctionality();
+
+        //Iterators
+        IteratorClass iteratorClass = new IteratorClass();
+        iteratorClass.listIterator();
 
 
     }
